@@ -18,13 +18,6 @@ class InfoPage extends StatelessWidget {
         child: Stack(
           children: [
             Align(
-              alignment: Alignment.topLeft,
-              child: Text(
-                "Quem eu sou ?",
-                style: _textStyle,
-              ),
-            ),
-            Align(
               alignment: Alignment.center,
               child: Container(
                 decoration: BoxDecoration(
@@ -54,7 +47,9 @@ class InfoPage extends StatelessWidget {
                           decoration: TextDecoration.underline),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(
+                    height: 10,
+                  ),
                   RichText(
                     text: TextSpan(children: [
                       TextSpan(
@@ -70,6 +65,16 @@ class InfoPage extends StatelessWidget {
                     ]),
                   ),
                 ],
+              ),
+            ),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: IconButton(
+                icon: Icon(
+                  Icons.info,
+                  color: Colors.cyan,
+                ),
+                onPressed: () {},
               ),
             )
           ],

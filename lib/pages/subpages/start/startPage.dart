@@ -4,7 +4,7 @@ import 'package:infoGraficAutomation/pages/subpages/start/starList_Widget.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({Key key}) : super(key: key);
-  static const String title = "Entedimento o problema";
+  static const String title = "Entedimento da planta";
   static const Color color = Colors.red;
 
   @override

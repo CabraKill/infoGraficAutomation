@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:infoGraficAutomation/pages/subpages/Info/info_Page.dart';
-import 'package:infoGraficAutomation/pages/subpages/attendanceCabuto/attendance_Page.dart';
+import 'package:infoGraficAutomation/pages/subpages/control/control_Page.dart';
 import 'package:infoGraficAutomation/pages/subpages/start/startPage.dart';
 import 'package:infoGraficAutomation/pages/subpages/when/whenPage.dart';
 
 class _Rx {
   final RxInt currentPage = 0.obs;
-  final RxString currentPageTitle = AttendancePage.title.obs;
-  final Rx<Color> backgroundColor = AttendancePage.color.obs;
+  final RxString currentPageTitle = WhenPage.title.obs;
+  final Rx<Color> backgroundColor = WhenPage.color.obs;
 }
 
 class HomeController extends GetxController {
@@ -17,13 +17,7 @@ class HomeController extends GetxController {
 
   static HomeController get to => Get.find();
 
-  @override
-  void onInit() {
-    //ever(r)
-    super.onInit();
-  }
-
-  void updateBackgroundColor() {
+  void updateStatus() {
     switch (rx.currentPage.value) {
       case 0:
         backgroundColor = WhenPage.color;
@@ -34,6 +28,10 @@ class HomeController extends GetxController {
         rx.currentPageTitle.value = StartPage.title;
         break;
       case 2:
+        backgroundColor = ControlPage.color;
+        rx.currentPageTitle.value = ControlPage.title;
+        break;
+      case 3:
         backgroundColor = InfoPage.color;
         rx.currentPageTitle.value = InfoPage.title;
         break;
@@ -42,7 +40,7 @@ class HomeController extends GetxController {
 
   void updateCurrentPage(int page) {
     rx.currentPage.value = page;
-    updateBackgroundColor();
+    updateStatus();
   }
 
   @override

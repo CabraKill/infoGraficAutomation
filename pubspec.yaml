@@ -52,6 +52,7 @@ flutter:
     - assets/
     - assets/when/
     - assets/start/
+    - assets/control/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
