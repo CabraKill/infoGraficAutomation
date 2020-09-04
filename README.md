@@ -1,0 +1,2 @@
+# infoGraficAutomation
+An infografic
