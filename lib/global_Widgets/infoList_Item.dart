@@ -8,7 +8,11 @@ class InfoListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.white, borderRadius: BorderRadius.circular(10)),
+          padding: EdgeInsets.all(5),
+      margin: EdgeInsets.all(5),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [

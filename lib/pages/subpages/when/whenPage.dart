@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:infoGraficAutomation/global_Widgets/graphWidget.dart';
-import 'package:infoGraficAutomation/pages/subpages/when/subpages/listWhen_Page.dart';
+import 'package:infoGraficAutomation/pages/subpages/when/listWhen_Page.dart';
 
 class WhenPage extends StatelessWidget {
   const WhenPage({Key key}) : super(key: key);

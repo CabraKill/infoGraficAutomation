@@ -10,7 +10,7 @@ class MyChip extends StatelessWidget {
       margin: EdgeInsets.all(3),
       decoration: BoxDecoration(
           color: Colors.grey.withAlpha(80),
-          borderRadius: BorderRadius.circular(40)),
+          borderRadius: BorderRadius.circular(10)),
       child: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Text(

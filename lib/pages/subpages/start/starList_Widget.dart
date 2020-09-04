@@ -14,7 +14,7 @@ class StartListWidget extends StatelessWidget {
           MyChip(text: TextList.problem1),
           MyChip(text: TextList.problem2),
         ]),
-        InfoListItem(title: "Pontapés", children: [
+        InfoListItem(title: "Pontapés e Soluções", children: [
           MyChip(text: TextList.solution1),
           MyChip(text: TextList.solution2)
         ]),
