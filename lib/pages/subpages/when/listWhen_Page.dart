@@ -1,18 +1,36 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:infoGraficAutomation/global_Widgets/graphInfo_Widget.dart';
 import 'package:infoGraficAutomation/global_Widgets/infoList_Item.dart';
 import 'package:infoGraficAutomation/global_Widgets/myChip_Widget.dart';
 
 class ListWhenPage extends StatelessWidget {
-  const ListWhenPage({Key key}) : super(key: key);
+  final double screenWidth;
+  const ListWhenPage({@required this.screenWidth, Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    return GraphInfoPage(children: [
+      InfoListItem(title: "Problemas", screenWidth: screenWidth, children: [
+        MyChip(text: TextList.problem1),
+        Image.asset(
+          "assets/context/moinho.PNG",
+        ),
+        MyChip(text: TextList.problem2),
+        Image.asset(
+          "assets/context/trabalho.jpg",
+        ),
+      ]),
+      InfoListItem(
+          title: "Pontapés",
+          screenWidth: screenWidth,
+          children: [MyChip(text: TextList.solution1)]),
+    ]);
     return Padding(
       padding: const EdgeInsets.only(top: 80.0),
       child: ListView(
         children: [
-          InfoListItem(title: "Problemas", children: [
+          InfoListItem(title: "Problemas", screenWidth: screenWidth, children: [
             MyChip(text: TextList.problem1),
             Image.asset(
               "assets/context/moinho.PNG",
@@ -23,7 +41,9 @@ class ListWhenPage extends StatelessWidget {
             ),
           ]),
           InfoListItem(
-              title: "Pontapés", children: [MyChip(text: TextList.solution1)]),
+              title: "Pontapés",
+              screenWidth: screenWidth,
+              children: [MyChip(text: TextList.solution1)]),
         ],
       ),
     );

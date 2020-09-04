@@ -21,13 +21,8 @@ class StartPage extends StatelessWidget {
                 asset: "assets/start/start.png",
               ),
             ),
-            LimitedBox(
-              maxWidth: 500,
-              child: Container(
-                width: constraints.maxWidth,
-                height: constraints.maxHeight,
-                child: StartListWidget(),
-              ),
+            StartListWidget(
+              screenWidth: constraints.maxWidth,
             ),
           ],
         );

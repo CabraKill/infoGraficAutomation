@@ -19,13 +19,8 @@ class ControlPage extends StatelessWidget {
               height: constraints.maxHeight,
               child: GraphWidget(asset: "assets/control/control.png"),
             ),
-            LimitedBox(
-              maxWidth: 500,
-              child: Container(
-                width: constraints.maxWidth,
-                height: constraints.maxHeight,
-                child: ControlListWidget(),
-              ),
+            ControlListWidget(
+              screenWidth: constraints.maxWidth,
             ),
           ],
         );

@@ -1,23 +1,42 @@
 import 'package:flutter/material.dart';
+import 'package:infoGraficAutomation/global_Widgets/graphInfo_Widget.dart';
 import 'package:infoGraficAutomation/global_Widgets/infoList_Item.dart';
 import 'package:infoGraficAutomation/global_Widgets/myChip_Widget.dart';
 
 class StartListWidget extends StatelessWidget {
-  const StartListWidget({Key key}) : super(key: key);
+  final double screenWidth;
+  const StartListWidget({@required this.screenWidth, Key key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    return GraphInfoPage(children: [
+      InfoListItem(title: "Problemas", screenWidth: screenWidth, children: [
+        MyChip(text: TextList.problem1),
+        MyChip(text: TextList.problem2),
+      ]),
+      InfoListItem(
+          title: "Pontapés e Soluções",
+          screenWidth: screenWidth,
+          children: [
+            MyChip(text: TextList.solution1),
+            MyChip(text: TextList.solution2)
+          ])
+    ]);
     return Padding(
       padding: const EdgeInsets.only(top: 80),
       child: ListView(children: [
-        InfoListItem(title: "Problemas", children: [
+        InfoListItem(title: "Problemas", screenWidth: screenWidth, children: [
           MyChip(text: TextList.problem1),
           MyChip(text: TextList.problem2),
         ]),
-        InfoListItem(title: "Pontapés e Soluções", children: [
-          MyChip(text: TextList.solution1),
-          MyChip(text: TextList.solution2)
-        ]),
+        InfoListItem(
+            title: "Pontapés e Soluções",
+            screenWidth: screenWidth,
+            children: [
+              MyChip(text: TextList.solution1),
+              MyChip(text: TextList.solution2)
+            ]),
       ]),
     );
   }
