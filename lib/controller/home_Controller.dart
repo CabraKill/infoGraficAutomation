@@ -17,6 +17,14 @@ class HomeController extends GetxController {
 
   static HomeController get to => Get.find();
 
+  @override
+  void onReady() {
+    Get.snackbar("Lembrete",
+        "Não esqueça de rolar na vertial e horizontal para acessar o conteúdo",
+        backgroundColor: Colors.black.withAlpha(200), colorText: Colors.cyan);
+    super.onReady();
+  }
+
   void updateStatus() {
     switch (rx.currentPage.value) {
       case 0:

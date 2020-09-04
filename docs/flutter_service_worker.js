@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "de3dd03408e9ba17571184f69b5d4566",
+  "assets/AssetManifest.json": "c8da3b914b4a424777f5c09b7084674b",
 "assets/assets/context/context.png": "0ebf25a0ce215a375dd44eb3f0b09197",
 "assets/assets/context/links.txt": "1d668be90c9ab818ffe55f1e4e438c3d",
 "assets/assets/context/moinho.PNG": "16d4db36b0a61d22fc2dfb0a8ae34b13",
@@ -11,6 +11,7 @@ const RESOURCES = {
 "assets/assets/context/when2.png": "1c6a4792b07911d46e1b224e95d668be",
 "assets/assets/context/when3.png": "6528861beb335d610d4e37b0a5181c36",
 "assets/assets/control/control.png": "03664a7882f1a40c4fa39df3fb54ba52",
+"assets/assets/creative-commons.png": "ec8a466729574b8bf747a24f30f9e1dd",
 "assets/assets/eu-circle.png": "390a381ee5a31cb6c355dd06034634fa",
 "assets/assets/eu.jpg": "328079b64025283bc8a36054e114fa7d",
 "assets/assets/start/start.png": "5497c3bcce467ad0ee497c2c68388ceb",
@@ -23,7 +24,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "a224d8cbd28a81234e77d51ba90e3164",
 "/": "a224d8cbd28a81234e77d51ba90e3164",
-"main.dart.js": "798dc274bd7f01775f17d86c78547e9e",
+"main.dart.js": "a1df1e9c7448112aac5e1744963edbb2",
 "manifest.json": "960bd2f9fb2ae6d3831771b0830a4b8c"
 };
 

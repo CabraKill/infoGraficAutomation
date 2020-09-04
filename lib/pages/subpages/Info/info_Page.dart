@@ -80,22 +80,29 @@ class InfoPage extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.bottomRight,
-              child: IconButton(
-                tooltip: "Informações e licensas.",
-                icon: Icon(
-                  Icons.info,
-                  color: Colors.cyan,
-                ),
-                onPressed: () => showAboutDialog(
-                    context: context,
-                    applicationIcon: Icon(Icons.info),
-                    applicationName: "InfoGraphControl",
-                    applicationVersion: "1.0",
-                    applicationLegalese: "Under MIT license.",
-                    children: [
-                      Text(
-                          "Contribuição informativa na área de Controle.")
-                    ]),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset("assets/creative-commons.png"),
+                  IconButton(
+                    tooltip: "Informações e licensas.",
+                    icon: Icon(
+                      Icons.info,
+                      color: Colors.cyan,
+                    ),
+                    onPressed: () => showAboutDialog(
+                        context: context,
+                        applicationIcon: Icon(Icons.info),
+                        applicationName: "InfoGraphControl",
+                        applicationVersion: "1.0",
+                        applicationLegalese:
+                            "Este trabalho está licenciado com uma Licença Creative Commons - Atribuição 4.0 Internacional.",
+                        children: [
+                          Text(
+                              "Contribuição em InfoGráfico na área de Controle.")
+                        ]),
+                  ),
+                ],
               ),
             )
           ],
