@@ -18,6 +18,17 @@ class InfoPage extends StatelessWidget {
         child: Stack(
           children: [
             Align(
+              alignment: Alignment(0, -0.8),
+              child: SizedBox(
+                width: 290,
+                child: Text(
+                  '"Olá, eu sou Raphael! Atualmente no 8 período de Engenharia Mecatrônica(Unit/Se) e Técnico em Automação Industrial. Apaixonado por tecnologia que soluciona problemas(Ou só que é muito legal de ver)."',
+                  style: _textStyle,
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+            ),
+            Align(
               alignment: Alignment.center,
               child: Container(
                 decoration: BoxDecoration(
