@@ -17,7 +17,7 @@ class WhenPage extends StatelessWidget {
             Container(
               width: constraints.maxWidth,
               height: constraints.maxHeight,
-              child: GraphWidget(asset: "assets/when/when.png"),
+              child: GraphWidget(asset: "assets/context/context.png"),
             ),
             LimitedBox(
               maxWidth: 500,

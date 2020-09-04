@@ -48658,12 +48658,12 @@ $2:function(a,b){var s=null,r=b.b,q=b.d
 return B.kr(H.a([M.by(s,new G.m9("assets/start/start.png",s),s,s,s,s,q,s,s,s,s,r),new T.kq(500,1/0,M.by(s,new T.CS(s),s,s,s,s,q,s,s,s,s,r),s)],t.t),s,C.l)}}
 D.A0.prototype={
 B:function(a){var s=null,r=t.t
-return new T.bi(C.lm,B.kr(H.a([new S.hw("Problemas",H.a([new U.dt("Cada vez mais era dif\xedcil alimentar a popula\xe7\xe3o das cidades. As crian\xe7as nasciam, as planta\xe7\xf5es e fazendas perdiam espa\xe7o ou n\xe3o cresciam junto. As esta\xe7\xf5es do ano podiam dificultar mais ainda a sobreviv\xeancia sem um estoque. N\xe3o era mais poss\xedvel produzir pouco.",s),U.Om("assets/when/moinho.PNG",s),new U.dt("Ap\xf3s o engajamento de m\xe9todos mec\xe2nicos na solu\xe7\xe3o de problemas, estes de tornaram cada vez mais complexos e perigosos. Por mais que os direitos trabalhistas n\xe3o existissem, como fazer para ter trabalhadores vivos e sad\xedos para as f\xe1bricas ?",s),U.Om("assets/when/trabalho.jpg",s)],r),s),new S.hw("Pontap\xe9s",H.a([new U.dt("Foi tida a ideia de um moinho para agilizar a produ\xe7\xe3o. Por\xe9m como manter algo funcionando o tempo todo atrav\xe9s do trabalho bra\xe7al ?",s)],r),s)],r),s,C.k),s)}}
+return new T.bi(C.lm,B.kr(H.a([new S.hw("Problemas",H.a([new U.dt("Cada vez mais era dif\xedcil alimentar a popula\xe7\xe3o das cidades. As crian\xe7as nasciam, as planta\xe7\xf5es e fazendas perdiam espa\xe7o ou n\xe3o cresciam junto. As esta\xe7\xf5es do ano podiam dificultar mais ainda a sobreviv\xeancia sem um estoque. N\xe3o era mais poss\xedvel produzir pouco.",s),U.Om("assets/context/moinho.PNG",s),new U.dt("Ap\xf3s o engajamento de m\xe9todos mec\xe2nicos na solu\xe7\xe3o de problemas, estes de tornaram cada vez mais complexos e perigosos. Por mais que os direitos trabalhistas n\xe3o existissem, como fazer para ter trabalhadores vivos e sad\xedos para as f\xe1bricas ?",s),U.Om("assets/context/trabalho.jpg",s)],r),s),new S.hw("Pontap\xe9s",H.a([new U.dt("Foi tida a ideia de um moinho para agilizar a produ\xe7\xe3o. Por\xe9m como manter algo funcionando o tempo todo atrav\xe9s do trabalho bra\xe7al ?",s)],r),s)],r),s,C.k),s)}}
 Q.Dz.prototype={
 B:function(a){return new A.fz(new Q.V6(),null)}}
 Q.V6.prototype={
 $2:function(a,b){var s=null,r=b.b,q=b.d
-return B.kr(H.a([M.by(s,new G.m9("assets/when/when.png",s),s,s,s,s,q,s,s,s,s,r),new T.kq(500,1/0,M.by(s,new D.A0(s),s,s,s,s,q,s,s,s,s,r),s)],t.t),s,C.l)}}
+return B.kr(H.a([M.by(s,new G.m9("assets/context/context.png",s),s,s,s,s,q,s,s,s,s,r),new T.kq(500,1/0,M.by(s,new D.A0(s),s,s,s,s,q,s,s,s,s,r),s)],t.t),s,C.l)}}
 X.O2.prototype={}
 F.PY.prototype={
 $0:function(){return new F.mc(null)},

@@ -15,11 +15,11 @@ class ListWhenPage extends StatelessWidget {
           InfoListItem(title: "Problemas", children: [
             MyChip(text: TextList.problem1),
             Image.asset(
-              "assets/when/moinho.PNG",
+              "assets/context/moinho.PNG",
             ),
             MyChip(text: TextList.problem2),
             Image.asset(
-              "assets/when/trabalho.jpg",
+              "assets/context/trabalho.jpg",
             ),
           ]),
           InfoListItem(
