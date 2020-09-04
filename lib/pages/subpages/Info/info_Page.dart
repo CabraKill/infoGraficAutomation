@@ -81,11 +81,21 @@ class InfoPage extends StatelessWidget {
             Align(
               alignment: Alignment.bottomRight,
               child: IconButton(
+                tooltip: "Informações e licensas.",
                 icon: Icon(
                   Icons.info,
                   color: Colors.cyan,
                 ),
-                onPressed: () {},
+                onPressed: () => showAboutDialog(
+                    context: context,
+                    applicationIcon: Icon(Icons.info),
+                    applicationName: "InfoGraphControl",
+                    applicationVersion: "1.0",
+                    applicationLegalese: "Under MIT license.",
+                    children: [
+                      Text(
+                          "Contribuição informativa na área de Controle.")
+                    ]),
               ),
             )
           ],
