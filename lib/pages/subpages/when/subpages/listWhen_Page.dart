@@ -1,6 +1,6 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:infoGraficAutomation/global_Widgets/infoList_Item.dart';
 import 'package:infoGraficAutomation/global_Widgets/myChip_Widget.dart';
 
 class ListWhenPage extends StatelessWidget {
@@ -12,49 +12,18 @@ class ListWhenPage extends StatelessWidget {
       padding: const EdgeInsets.only(top: 80.0),
       child: ListView(
         children: [
-          Card(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "Problemas",
-                  style: TextStyle(fontSize: 25),
-                ),
-                Wrap(
-                  runSpacing: 5,
-                  spacing: 10,
-                  children: [
-                    MyChip(text: TextList.problem1),
-                    Image.asset(
-                      "assets/when/moinho.PNG",
-                    ),
-                    MyChip(text: TextList.problem2),
-                    Image.asset(
-                      "assets/when/trabalho.jpg",
-                    ),
-                  ],
-                ),
-              ],
+          InfoListItem(title: "Problemas", children: [
+            MyChip(text: TextList.problem1),
+            Image.asset(
+              "assets/when/moinho.PNG",
             ),
-          ),
-          Card(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "Pontapés",
-                  style: TextStyle(fontSize: 25),
-                ),
-                Wrap(
-                  runSpacing: 5,
-                  spacing: 10,
-                  children: [
-                    MyChip(text: TextList.solution1),
-                  ],
-                ),
-              ],
+            MyChip(text: TextList.problem2),
+            Image.asset(
+              "assets/when/trabalho.jpg",
             ),
-          )
+          ]),
+          InfoListItem(
+              title: "Pontapés", children: [MyChip(text: TextList.solution1)]),
         ],
       ),
     );

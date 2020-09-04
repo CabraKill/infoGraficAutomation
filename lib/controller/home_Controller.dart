@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:infoGraficAutomation/pages/subpages/Cactosol/cactosol_Page.dart';
 import 'package:infoGraficAutomation/pages/subpages/Info/info_Page.dart';
 import 'package:infoGraficAutomation/pages/subpages/attendanceCabuto/attendance_Page.dart';
+import 'package:infoGraficAutomation/pages/subpages/start/startPage.dart';
 import 'package:infoGraficAutomation/pages/subpages/when/whenPage.dart';
 
 class _Rx {
@@ -30,8 +30,8 @@ class HomeController extends GetxController {
         rx.currentPageTitle.value = WhenPage.title;
         break;
       case 1:
-        backgroundColor = CactosolPage.color;
-        rx.currentPageTitle.value = CactosolPage.title;
+        backgroundColor = StartPage.color;
+        rx.currentPageTitle.value = StartPage.title;
         break;
       case 2:
         backgroundColor = InfoPage.color;
